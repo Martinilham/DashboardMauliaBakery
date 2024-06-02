@@ -1,0 +1,51 @@
+.step-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9rem; /* Equivalent to w-36 in Tailwind CSS */
+  }
+  
+  .step-item:not(:first-child)::before {
+    content: '';
+    background-color: #CBD5E0; /* Equivalent to bg-slate-200 in Tailwind CSS */
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 50%; /* Equivalent to right-2/4 in Tailwind CSS */
+    top: 33.33%; /* Equivalent to top-1/3 in Tailwind CSS */
+    transform: translateY(-50%); /* Equivalent to -translate-y-2/4 in Tailwind CSS */
+  }
+  
+  .step {
+    width: 2.5rem; /* Equivalent to w-10 in Tailwind CSS */
+    height: 2.5rem; /* Equivalent to h-10 in Tailwind CSS */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    background-color: #4A5568; /* Equivalent to bg-slate-700 in Tailwind CSS */
+    border-radius: 9999px; /* Rounded-full equivalent */
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
+    color: #FFFFFF; /* Equivalent to text-white in Tailwind CSS */
+  }
+  
+  .active .step {
+    background-color: #4FD1C5; /* Equivalent to bg-sky-600 in Tailwind CSS */
+  }
+  
+  .complete .step {
+    background-color: #48BB78; /* Equivalent to bg-green-600 in Tailwind CSS */
+  }
+  
+  .complete p {
+    color: #FFFFFF; /* Equivalent to text-white in Tailwind CSS */
+  }
+  
+  .complete:not(:first-child)::before,
+  .active:not(:first-child)::before {
+    background-color: #48BB78; /* Equivalent to bg-green-600 in Tailwind CSS */
+  }
+  
