@@ -11,7 +11,7 @@ function Login() {
   
 const ambiluser = () => {
     axios
-    .get('https://mauliya-bakeryserve.vercel.app/daftar')
+    .get('https://maulia-bakeryserver.vercel.app/daftar')
     .then((res) => {
         console.log(res.data)
     })
@@ -27,7 +27,7 @@ const handleLogin =  async (event) => {
   event.preventDefault();
   try {
       const response = await axios
-      .post('https://mauliya-bakeryserve.vercel.app/login', { nama, password })
+      .post('https://maulia-bakeryserver.vercel.app/login', { nama, password })
       const token = response.data.token
       alert('Login successful')
       setnama('')
