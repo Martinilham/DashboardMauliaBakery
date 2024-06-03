@@ -24,7 +24,7 @@ const Products = ( ) => {
 
   const getUserData = async () => {
     try {
-      const res = await axios.get("/api/proxy/getdata", {
+      const res = await axios.get("https://maulia-bakeryserver.vercel.app/getdata", {
         headers: {
           "Content-Type": "application/json",
         },

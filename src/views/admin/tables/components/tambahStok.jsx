@@ -19,7 +19,7 @@ export default function EditStok(props) {
 
     try {
       const response = await axios.put(
-        `https://mauliya-bakeryserve.vercel.app/tambahstok/${idProduct}`,
+        `https://maulia-bakeryserver.vercel.app/tambahstok/${idProduct}`,
         payload,
         {
           headers: {
